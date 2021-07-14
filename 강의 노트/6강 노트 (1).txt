@@ -136,8 +136,8 @@ font-family 글꼴을 설정하는 속성
 
 ◆6.6 Sign Up Screen part Three
 
-css을 만들면 브라우저에 자동으로 margin이나 padding값 등등이 주어지는데, 이러한 값을 없애는 방법이 있다.
-바로 리셋 css
+css을 만들면 브라우저에 자동으로 margin이나 padding값 등등이 주어지는데, 
+이러한 값을 없애는 방법이 있다. 바로 리셋 css
 
 구글에 reset css를 검색하면, 
 모든 css설정을 초기화 시켜주는 코드가 나오는데 이걸 복사해서
@@ -152,4 +152,74 @@ html에 link를 여러개 만들기보다 css에 이런식으로 넣어주는게
 웹사이트나 이미지의 길이,간격을 측정해주는 크롬의 확장프로그램
 Page Ruler Redux 클론 코딩할때도 간격을 측정해서 정확하게 복사한다.
 
--> 더 이상집중이 안되서 강의 7분부터는 내일 해야지
+text 너비 제한시키는 방법
+width:50% 이런식으로 하면 너비가 제한된다. 50%정도 쓰게되면
+자동으로 아랫줄에 텍스트가 내려감
+
+폰트 굵기선택 font-weight:600 등등
+폰트 굵기를 다운받은 상태에서 써야 적용됨.
+
+
+◆6.7 Log In Form part One
+
+input:focus {
+outlilne: none;
+}
+input을 클릭했을때 테두리가 나타나지않게 해줌
+전체적으로 이 옵션을 주고싶다면 reset.css에
+저 코드를 적어주면 됨
+
+크롬 확장프로그램
+ColorZilla 색상을 가져오는 프로그램
+
+
+◆6.8 Log In Form part Two
+
+어떤 부분을 예외로 적용되지않게 두고싶을떄
+not을 씀
+
+예를 들어 
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+
+해석하면 input type이 submit이 아닐때만
+border-bottom과 transition이 적용된다는 뜻
+참고로 배웠던건데 [submit] 이 [ ] 괄호는 특성 선택자(attribute seletor)
+
+cursor: pointer; 마우스를 가져다대면 손 모양이 나옴 
+cursor도 여러가지 옵션이 있음
+
+inherit; 상속을 뜻함 부모 엘리먼트의 속성을 물려받는것
+부모 엘리먼트의 값이 default일 경우에도 그 값을 물려받는다.
+color:inherit; 부모의 색상을 물려받음
+
+
+◆6.9 Recap and Forms
+
+style.css 파일에는 font-family나 모든 페이지 백그라운드 컬러를 부여하는등
+모든 웹페이지에 적용될 스타일에 준다. 니꼬방식, 근데 나도 깔끔해서 좋은듯
+
+form의 중요한 2가지 속성(attribute)
+action 과 method
+
+<form action="경로" method="post or get"></form>
+
+action은 어떤 페이지로 data를 보낼지 지정 할 수있음
+
+method는 2가지 방식 중 하나를 쓸 수있음
+POST와 GET 두가지
+POST방식은 백엔드 서버에 정보를 전송하는 방식 (아직은 안 배웠음)
+GET은 보안에 취약 (username과 password등 중요한 정보는 절대 GET방식으로 보내면 안됨
+중요하지 않은 정보만 GET으로 전송하기)
+
+현재 작업하는 카카오톡 클론코딩에서는 서버를 사용하지않으므로 get방식으로 함
+
+
+
+
+
+
+
+
