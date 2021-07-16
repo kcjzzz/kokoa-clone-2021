@@ -77,9 +77,18 @@ relative는 가장 가까운 부모 기준으로 움직임
 
 ◆ 6.14 Screen Header
 
+Not Information
 
 
+◆ 6.15 Friends Screen part One
 
+아이콘의 색을 바꾸는 방법
+icon도 결국 text, font이기 때문에 
+
+i {
+ color: rgba(0, 0, 0, 0.3)  
+}
+이런식으로 바꿔줄 수 있음.
 
 
 
