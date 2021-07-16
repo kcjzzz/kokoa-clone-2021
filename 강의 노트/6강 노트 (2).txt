@@ -20,7 +20,7 @@ nav>ul>li*4>a
 이러한 문장이 생김 
 
 @import 할때도 순서가 중요하다.
-전체에 영향력이 높은 파일을 위에 순서에 놓아야함 (font나 reset.css 같은 것)
+전체에 걸쳐 영향을 주는 파일을 위에 순서에 놓아야함 (font나 reset.css 같은 것)
 font가 밑에 있으면 font 위에 import되어있는 파일들은 폰트 효과가 적용되지않는다.
 
 
@@ -28,7 +28,7 @@ font가 밑에 있으면 font 위에 import되어있는 파일들은 폰트 효�
 
 네비게이션 바 하단에 고정시키기
 position: fixed;
-bottom: 0; 방향에 따라 왼쪽에 두면 left 등등
+bottom: 0; 방향에 따라 왼쪽에 두면 left
 width:100%;  너비를 창 전체로 쓰게 해줌
 box-sizing: border-box; 
 
@@ -56,8 +56,7 @@ display:block;으로 바꿔주어야한다.
 
 사각형 박스에 border-radius로 원을 만들어주려면
 사각형 박스 사이즈의 절반만 주면 정확한 원이 만들어진다.
-
-width와 heigh가: 20px 이라면 border-radius를 10px로 주면 원이 된다.
+만약 width와 heigh가: 20px 이라면 border-radius를 10px로 주면 정확한 원이 된다.
 
 복습
 박스안에 text를 정 가운데로 오게하는 방법
@@ -67,5 +66,22 @@ align-items:center;
 
 만약 display가 block과 flex 둘다 있는 경우
 그냥 block을 지워주면 된다. block이 있으면 제대로 적용이 안될 수 있음
+
+position: absolute
+ 
+다른 요소와 겹치게 할수있어 유용하다.
+대신 absolute의 위치를 옮길때는 주의해야하는데 body를 중심으로 움직이기 때문에 
+absolute 주려는 요소의 부모선택자에게 position:relative를 부여해야한다.
+relative는 가장 가까운 부모 기준으로 움직임
+
+
+◆ 6.14 Screen Header
+
+
+
+
+
+
+
 
 
