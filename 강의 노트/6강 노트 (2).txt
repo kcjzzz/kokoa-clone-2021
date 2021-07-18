@@ -92,7 +92,23 @@ i {
 
 ◆ 6.16 User Component part One
 
->4분까지만 들음
+Not Information
+
+
+◆ 6.17 User Component part Two
+
+주석 처리 하기
+<!-- --> 이 코드부분은 숨겨짐, 나중에 추가해줄때 미리 쓰고
+나중에 주석지우던가 하는 것
+
+모든 컨테이너를 하나로 묶어주기 
+<main> 태그를 사용한다.
+
+
+
+
+
+
 
 
 
