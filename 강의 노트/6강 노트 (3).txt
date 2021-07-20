@@ -1,0 +1,27 @@
+◆ 6.21 Find Screen Part One
+
+숙제) chat부분 채팅창 여러개 만들어 보기
+채팅창이 달라붙어서 나올때는 
+margin-bottom을 각 user component에 추가 하면 된다 함
+
+아이콘 크기를 일괄 바꾸는방법
+icon전체를 class로 만들어서  font-size를 주는 것
+ex) 
+.find-icons__icon i {
+  font-size: 35px;
+}
+꼭 class로 묶어준 후에 icon사이즈를 바꿔야함
+class없이 그냥 i {font-size:35xp;} 이렇게 주면
+전체 icon 사이즈가 바뀔테니..
+
+border를 어디에 속하게 줄지는 아무데나 선택
+위에 속하게 해서 border-bottom을 줄 지,
+아래 속하게 해서 border-top을 줄 지, 똑같음
+
+◆ 6.22 Find Screen Part Two
+
+같은 코드가 계속 반복된다면 변수로 만들어 놓자
+왜냐면 같은 코드를 여러 번 사용하지 않도록.
+변수명은 내가 정하는것
+--변수명: 코드
+
