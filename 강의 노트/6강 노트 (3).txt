@@ -13,6 +13,7 @@ ex)
 꼭 class로 묶어준 후에 icon사이즈를 바꿔야함
 class없이 그냥 i {font-size:35xp;} 이렇게 주면
 전체 icon 사이즈가 바뀔테니..
+icon color 또한 같은 방법으로 바꿔줄 수있음
 
 border를 어디에 속하게 줄지는 아무데나 선택
 위에 속하게 해서 border-bottom을 줄 지,
@@ -24,4 +25,42 @@ border를 어디에 속하게 줄지는 아무데나 선택
 왜냐면 같은 코드를 여러 번 사용하지 않도록.
 변수명은 내가 정하는것
 --변수명: 코드
+
+
+◆ 6.23 Find Screen Part Three
+
+소문자를 대문자로 만드는 방법
+단지, 디자인 때문에 대문자가 필요하다면
+그냥 html에서는 소문자로 쓰고 CSS에서 대문자로 바꿔주면 된다.
+
+방법은 css에서 text-transform: uppercase;
+
+클래스안에 있는 클래스를 선택하려면
+.클래스 .클래스 이렇게하면 됨 
+
+ex) .open-post__members .divider
+
+팁인데 작은 바형태를 만들때
+div를 얇게 만들어서 (width: 2px height: 10px) 이런식으로
+margin을 조금 주면 앞뒤를 구분하는 바가 됨
+
+
+◆ 6.24 Find Screen Part Four
+
+justify-content: space-between;
+align-items: center; 
+
+이 두 조합은 엄청 엄청 엄청 엄청 자주 나오는 조합이다.
+
+
+◆ 6.25 More Screen part One
+
+> 3분 30초 부터
+
+
+
+
+
+
+
 
